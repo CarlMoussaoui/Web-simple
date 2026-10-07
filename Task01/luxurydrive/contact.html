@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | LuxuryDrive</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Luxury<span>Drive</span></a>
+            <nav class="site-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="fleet.html">Flota</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="btn">Reservar Ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-contact">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>¿Tienes preguntas sobre nuestros vehículos premium o necesitas asistencia personalizada? Nuestro equipo está listo para ayudarte a planificar la experiencia de conducción perfecta.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <h2 class="panel-title">Información de Contacto</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon" aria-hidden="true">📍</div>
+                        <div class="info-content">
+                            <h3>Nuestra Dirección</h3>
+                            <p>Av. Francia, 123<br>46023 Valencia, España</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" aria-hidden="true">📞</div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <p>+34 900 123 456<br>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" aria-hidden="true">✉️</div>
+                        <div class="info-content">
+                            <h3>Correo Electrónico</h3>
+                            <p>info@luxurydrive.com<br>reservas@luxurydrive.com<br>soporte@luxurydrive.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" aria-hidden="true">🕒</div>
+                        <div class="info-content">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 10:00 - 14:00<br>Domingos: Cerrado</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" aria-hidden="true">🚗</div>
+                        <div class="info-content">
+                            <h3>Servicio de Entrega</h3>
+                            <p>Ofrecemos entrega y recogida en toda la Comunidad Valenciana. Consulta disponibilidad para otras regiones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 class="panel-title">Envíanos un Mensaje</h2>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="booking">Consulta sobre Reserva</option>
+                                    <option value="fleet">Información sobre la Flota</option>
+                                    <option value="services">Servicios Adicionales</option>
+                                    <option value="business">Alquiler para Empresas</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section contact-faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3 class="faq-heading">
+                            <button type="button" class="faq-question" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1">
+                                <span>¿Cuáles son los requisitos para alquilar un vehículo?</span>
+                                <span class="faq-toggle" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                            <p>Para alquilar con LuxuryDrive necesitas: tener mínimo 25 años, carnet de conducir válido con al menos 2 años de antigüedad, tarjeta de crédito a tu nombre y documento de identidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-heading">
+                            <button type="button" class="faq-question" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">
+                                <span>¿Qué incluye el precio del alquiler?</span>
+                                <span class="faq-toggle" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                            <p>Nuestro precio incluye: seguro a todo riesgo con franquicia reducida, kilometraje ilimitado, asistencia en carretera 24/7, entrega y recogida en nuestras sedes, y mantenimiento del vehículo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-heading">
+                            <button type="button" class="faq-question" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">
+                                <span>¿Ofrecen entrega del vehículo en otras ciudades?</span>
+                                <span class="faq-toggle" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                            <p>Sí, ofrecemos servicio de entrega en toda la Comunidad Valenciana sin coste adicional. Para otras regiones consulta disponibilidad y tarifas con nuestro equipo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-heading">
+                            <button type="button" class="faq-question" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4">
+                                <span>¿Puedo modificar o cancelar mi reserva?</span>
+                                <span class="faq-toggle" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                            <p>Puedes modificar tu reserva hasta 48 horas antes sin coste. Las cancelaciones realizadas con más de 7 días de antelación no tienen coste, entre 7 y 2 días se aplica el 30% y menos de 48 horas el 50%.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-heading">
+                            <button type="button" class="faq-question" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5">
+                                <span>¿Qué métodos de pago aceptan?</span>
+                                <span class="faq-toggle" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                            <p>Aceptamos tarjetas de crédito Visa, MasterCard y American Express, transferencia bancaria y PayPal. Se requiere un depósito de seguridad que se devuelve al finalizar el alquiler.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestra Ubicación</h2>
+                </div>
+
+                <iframe class="map-frame" title="Mapa de LuxuryDrive en Avenida de Francia, Valencia"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12315.530157909182!2d-0.37744649999999997!3d39.459519499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf6a66d13%3A0x9a1c6b8b8b8b8b8b!2sAvenida%20de%20Francia%2C%20Valencia!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="contact-map-details">
+                    <h3><span aria-hidden="true">📍</span> Avenida de Francia, Valencia</h3>
+                    <p>
+                        Nuestras oficinas se encuentran en el inicio de la Avenida de Francia,
+                        una de las principales arterias de Valencia, con excelentes conexiones
+                        de transporte y fácil acceso desde cualquier punto de la ciudad.
+                    </p>
+
+                    <div class="map-directions">
+                        <div>
+                            <h4><span aria-hidden="true">🚗</span> Cómo llegar</h4>
+                            <ul>
+                                <li>Metro: Línea 5 (Avenida del Cid)</li>
+                                <li>Autobús: Líneas 19, 40, 81</li>
+                                <li>Parking público disponible</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4><span aria-hidden="true">🅿️</span> Parking</h4>
+                            <ul>
+                                <li>Parking para clientes gratuito</li>
+                                <li>Acceso adaptado</li>
+                                <li>Zona de carga/descarga</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <h2>¿Listo para vivir la experiencia LuxuryDrive?</h2>
+            <p>Reserva tu vehículo premium ahora y disfruta del lujo y confort que mereces. Nuestro equipo te ayudará a elegir el coche perfecto para tu ocasión especial.</p>
+            <a href="reservation.html" class="btn">Reservar Ahora</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h2 class="footer-title">LuxuryDrive</h2>
+                    <p>Tu compañía de confianza para el alquiler de vehículos premium. Ofrecemos la mejor experiencia en movilidad de lujo.</p>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Enlaces Rápidos</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="fleet.html">Flota</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul>
+                        <li><span aria-hidden="true">📞</span> +34 000 000 000</li>
+                        <li><span aria-hidden="true">✉️</span> info@luxurydrive.com</li>
+                        <li><span aria-hidden="true">📍</span> Av. Francia, 123 - Valencia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 LuxuryDrive. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

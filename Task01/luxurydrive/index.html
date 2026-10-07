@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryDrive | Alquiler de Coches Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Luxury<span>Drive</span></a>
+            <nav class="site-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="fleet.html">Flota</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="btn">Reservar Ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Alquiler de Coches de Lujo</h1>
+                <p>Descubre nuestra exclusiva selección de vehículos premium. Experimenta el lujo, el confort y el rendimiento en cada kilómetro.</p>
+                <a href="fleet.html" class="btn">Ver Flota</a>
+            </div>
+        </section>
+
+        <section class="page-section cars-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestra Flota Premium</h2>
+                    <p class="section-description"><strong>Selecciona entre nuestra exclusiva gama de vehículos de alta gama para cualquier ocasión.</strong></p>
+                    <p class="section-description">Tenga en cuenta que estos son solo una variedad de los productos más alquilados; si desea ver más, pincha aquí <a href="fleet.html">Flota</a>.</p>
+                    <p class="section-description">O también puede comunicarse con nosotros a través del método de contacto que aparece al final del sitio web.</p>
+                </div>
+
+                <div class="cars-grid">
+                <article class="car-card">
+                    <img class="car-image" src="../images/bmw.jpg" alt="BMW Serie 7, sedán de lujo" loading="lazy">
+                    <div class="car-info">
+                        <h3>BMW Serie 7</h3>
+                        <p>Elegancia y tecnología en su máxima expresión. El sedán de lujo definitivo.</p>
+                        <ul class="car-specs">
+                            <li>5 Asientos</li>
+                            <li>Automático</li>
+                            <li>Diesel</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€150/día</p>
+                            <a href="reservation.html?car=bmw" class="btn">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img class="car-image" src="../images/FotoMercedes.jpg" alt="Mercedes-Benz Clase S, sedán de lujo" loading="lazy">
+                    <div class="car-info">
+                        <h3>Mercedes-Benz Clase S</h3>
+                        <p>El epítome del lujo y la innovación en movilidad premium.</p>
+                        <ul class="car-specs">
+                            <li>5 Asientos</li>
+                            <li>Automático</li>
+                            <li>Híbrido</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€160/día</p>
+                            <a href="reservation.html?car=mercedes" class="btn">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img class="car-image" src="../images/Ferrari.jpg" alt="Ferrari F8 Tributo, superdeportivo italiano" loading="lazy">
+                    <div class="car-info">
+                        <h3>Ferrari F8 Tributo</h3>
+                        <p>Pura adrenalina y diseño italiano. Experimenta la emoción de conducir un Ferrari.</p>
+                        <ul class="car-specs">
+                            <li>2 Asientos</li>
+                            <li>Automático</li>
+                            <li>Gasolina</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€450/día</p>
+                            <a href="reservation.html?car=ferrari" class="btn">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img class="car-image" src="../images/toyota.jpg" alt="Toyota Supra GR, deportivo japonés" loading="lazy">
+                    <div class="car-info">
+                        <h3>Toyota Supra GR</h3>
+                        <p>Deportividad japonesa con un diseño agresivo y un rendimiento excepcional.</p>
+                        <ul class="car-specs">
+                            <li>2 Asientos</li>
+                            <li>Automático</li>
+                            <li>Gasolina</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€120/día</p>
+                            <a href="reservation.html?car=toyota" class="btn">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img class="car-image" src="../images/jeep.jpg" alt="Jeep Grand Cherokee, SUV todoterreno" loading="lazy">
+                    <div class="car-info">
+                        <h3>Jeep Grand Cherokee</h3>
+                        <p>Potencia y versatilidad para cualquier terreno, con el confort que mereces.</p>
+                        <ul class="car-specs">
+                            <li>5 Asientos</li>
+                            <li>Automático</li>
+                            <li>Diesel</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€650/semana</p>
+                            <a href="reservation.html?car=jeep" class="btn btn-weekly">Reservar 1 semana</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img class="car-image" src="../images/tesla.jpg" alt="Tesla Model X, SUV eléctrico" loading="lazy">
+                    <div class="car-info">
+                        <h3>Tesla Model X</h3>
+                        <p>Innovación eléctrica con un rendimiento impresionante y tecnología de punta.</p>
+                        <ul class="car-specs">
+                            <li>5 Asientos</li>
+                            <li>Automático</li>
+                            <li>Eléctrico</li>
+                        </ul>
+                        <div class="car-price">
+                            <p class="price">€800/semana</p>
+                            <a href="reservation.html?car=tesla" class="btn btn-weekly">Reservar 1 semana</a>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section services-overview section-on-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <p class="section-description">Ofrecemos una experiencia completa de alquiler de vehículos premium.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">🚗</div>
+                        <h3>Entrega y Recogida</h3>
+                        <p>Te llevamos el coche donde lo necesites y lo recogemos al finalizar.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">🛡️</div>
+                        <h3>Seguro Completo</h3>
+                        <p>Cobertura total para que disfrutes de tu viaje con total tranquilidad.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">📞</div>
+                        <h3>Asistencia 24/7</h3>
+                        <p>Estamos disponibles en cualquier momento para resolver cualquier incidencia.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">💳</div>
+                        <h3>Pago Flexible</h3>
+                        <p>Múltiples opciones de pago y planes adaptados a tus necesidades.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h2 class="footer-title">LuxuryDrive</h2>
+                    <p>Tu compañía de confianza para el alquiler de vehículos premium. Ofrecemos la mejor experiencia en movilidad de lujo.</p>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Enlaces Rápidos</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="fleet.html">Flota</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul>
+                        <li><span aria-hidden="true">📞</span> +34 000 0000 00</li>
+                        <li><span aria-hidden="true">✉️</span> info@luxurydrive.com</li>
+                        <li><span aria-hidden="true">📍</span> Av. Francia, Valencia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 LuxuryDrive. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

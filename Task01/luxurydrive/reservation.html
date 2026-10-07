@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryDrive | Reservar Vehículo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="reservation.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Luxury<span>Drive</span></a>
+            <nav class="site-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="fleet.html">Flota</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="btn" aria-current="page">Reservar Ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-reservation">
+            <div class="container">
+                <h1>Completar Reserva</h1>
+                <p>Confirma los detalles de tu reserva y completa el formulario</p>
+
+                <ol class="reservation-steps" aria-label="Pasos de la reserva">
+                    <li class="step is-active">
+                        <span class="step-number">1</span>
+                        <span>Selección</span>
+                    </li>
+                    <li class="step is-active" aria-current="step">
+                        <span class="step-number">2</span>
+                        <span>Datos</span>
+                    </li>
+                    <li class="step">
+                        <span class="step-number">3</span>
+                        <span>Confirmación</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container reservation-container">
+                <div class="reservation-grid">
+                    <div class="selected-car">
+                        <h2 class="panel-title">Vehículo Seleccionado</h2>
+
+                        <img id="selected-car-image" class="selected-car-image" src="../images/bmw.jpg" alt="BMW Serie 7, sedán de lujo">
+
+                        <h3 id="selected-car-name">BMW Serie 7</h3>
+                        <ul id="selected-car-features" class="car-features">
+                            <li>5 Asientos</li>
+                            <li>Automático</li>
+                            <li>Diesel</li>
+                        </ul>
+                        <div>
+                            <p class="price" id="selected-car-price">€150/día</p>
+                            <p class="price-note">Impuestos incluidos</p>
+                        </div>
+
+                        <div class="reservation-dates">
+                            <p class="date-info">
+                                <strong>Fecha de recogida:</strong>
+                                <span id="pickup-date">Por confirmar</span>
+                            </p>
+                            <p class="date-info">
+                                <strong>Fecha de devolución:</strong>
+                                <span id="return-date">Por confirmar</span>
+                            </p>
+                            <p class="date-info">
+                                <strong>Duración:</strong>
+                                <span id="rental-duration">5 días</span>
+                            </p>
+                        </div>
+
+                        <a href="fleet.html" class="btn btn-secondary btn-block">Cambiar de vehículo</a>
+                    </div>
+
+                    <div class="reservation-form">
+                        <h2 class="panel-title">Tus Datos</h2>
+                        <form id="reservation-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">Nombre *</label>
+                                    <input type="text" id="first-name" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Apellidos *</label>
+                                    <input type="text" id="last-name" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Dirección</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickup-location">Lugar de recogida *</label>
+                                    <select id="pickup-location" name="pickupLocation" required>
+                                        <option value="">Seleccionar</option>
+                                        <option value="airport">Aeropuerto de Valencia</option>
+                                        <option value="office">Oficina Central (Av. Francia)</option>
+                                        <option value="hotel">Entrega en hotel</option>
+                                        <option value="home">Entrega a domicilio</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-location">Lugar de devolución *</label>
+                                    <select id="return-location" name="returnLocation" required>
+                                        <option value="">Seleccionar</option>
+                                        <option value="airport">Aeropuerto de Valencia</option>
+                                        <option value="office">Oficina Central (Av. Francia)</option>
+                                        <option value="hotel">Recogida en hotel</option>
+                                        <option value="home">Recogida a domicilio</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="special-requests">Solicitudes especiales</label>
+                                <textarea id="special-requests" name="specialRequests" rows="3" placeholder="Necesidades especiales, hora concreta, etc."></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <label>
+                                    <input type="checkbox" name="terms" required>
+                                    <span>Acepto los <a href="terms.html" target="_blank" rel="noopener">términos y condiciones</a> *</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <label>
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Deseo recibir ofertas y novedades por email</span>
+                                </label>
+                            </div>
+
+                            <div class="reservation-summary">
+                                <h3>Resumen de la reserva</h3>
+                                <p class="summary-item">
+                                    <span id="rental-label">Alquiler (5 días)</span>
+                                    <span id="rental-cost">€750</span>
+                                </p>
+                                <p class="summary-item">
+                                    <span>Seguro Premium</span>
+                                    <span id="insurance-cost">€50</span>
+                                </p>
+                                <p class="summary-item">
+                                    <span>Entrega en hotel</span>
+                                    <span id="delivery-cost">€25</span>
+                                </p>
+                                <p class="summary-item summary-total">
+                                    <span>Total</span>
+                                    <span id="total-cost">€825</span>
+                                </p>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">Confirmar Reserva y Pagar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h2 class="footer-title">LuxuryDrive</h2>
+                    <p>Tu compañía de confianza para el alquiler de vehículos premium.</p>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Enlaces Rápidos</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="fleet.html">Flota</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul>
+                        <li><span aria-hidden="true">📞</span> +34 000 0000 00</li>
+                        <li><span aria-hidden="true">✉️</span> info@luxurydrive.com</li>
+                        <li><span aria-hidden="true">📍</span> Av. Francia, Valencia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 LuxuryDrive. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
