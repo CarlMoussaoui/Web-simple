@@ -1,0 +1,16 @@
+{
+  "name": "task01",
+  "version": "1.0.0",
+  "description": "Static website for a premium car rental company in Valencia. Plain HTML, CSS and JavaScript, with no build step and no dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
